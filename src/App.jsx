@@ -11,6 +11,7 @@ export default function App() {
       text: "Мы живём в момент, когда интеллект перестаёт быть достаточным определением человека. ИИ уже умеет генерировать текст, изображение, гипотезы, стратегии и всё глубже входит в пространство, которое долго считалось привилегией человеческого ума.",
       buttonRu: "RU",
       buttonEn: "EN",
+      issue: "Выпуск 01",
     },
     en: {
       brand: "PHYSICS OF CONSCIOUSNESS",
@@ -19,6 +20,7 @@ export default function App() {
       text: "We live in a moment when intelligence is no longer a sufficient definition of the human. AI can already generate text, images, hypotheses, and strategies, and it is moving ever deeper into a space long considered the privilege of the human mind.",
       buttonRu: "RU",
       buttonEn: "EN",
+      issue: "Issue 01",
     },
   };
 
@@ -126,7 +128,7 @@ export default function App() {
               color: "#d6d3d1",
             }}
           >
-            {language === "ru" ? "Выпуск 01" : "Issue 01"}
+            {current.issue}
           </div>
 
           <h1 style={{ fontSize: 56, lineHeight: 0.95, fontWeight: 300, marginTop: 24 }}>
