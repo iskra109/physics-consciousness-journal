@@ -321,7 +321,7 @@ export default function PhysicsOfConsciousnessJournal() {
   };
 
   return (
-   <div className="min-h-screen bg-[#0a0a0a] text-stone-100 selection:bg-stone-200 selection:text-black pt-24">
+  <div className="min-h-screen bg-[#0a0a0a] text-stone-100 selection:bg-stone-200 selection:text-black">
       <div className="pointer-events-none fixed inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_0%,rgba(255,255,255,0.08),transparent_24%),radial-gradient(circle_at_70%_12%,rgba(255,255,255,0.05),transparent_20%),radial-gradient(circle_at_50%_35%,rgba(255,255,255,0.025),transparent_32%),linear-gradient(to_bottom,#050505,#0a0a0a_34%,#060606_68%,#040404)]" />
         <div className="absolute inset-0 opacity-[0.05] bg-[linear-gradient(to_right,transparent,rgba(255,255,255,0.22),transparent)] [background-size:1200px_100%]" />
