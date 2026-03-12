@@ -376,21 +376,20 @@ export default function PhysicsOfConsciousnessJournal() {
                 return (
                  <a
   key={section.id}
-  href={`#${section.id}`}
-  onClick={(e) => {
-    e.preventDefault()
-    setActiveSection(section.id)
-    document.getElementById(section.id)?.scrollIntoView({ behavior: "smooth" })
+  ref={(el) => {
+    if (el) tabRefs.current[section.id] = el
   }}
-  className={`whitespace-nowrap rounded-full border px-3.5 py-2 text-xs leading-none transition
-  ${
+  href={`#${section.id}`}
+  onClick={scrollToSection}
+  aria-current={isActive ? "page" : undefined}
+  className={`whitespace-nowrap rounded-full border px-3.5 py-2 text-xs leading-none transition focus:outline-none ${
     isActive
       ? "border-white/50 bg-white/12 text-white"
       : "border-white/10 text-stone-300 hover:border-white/30 hover:text-white"
   }`}
 >
-                    {section.title}
-                  </a>
+  {section.title}
+</a>
                 );
               })}
             </div>
