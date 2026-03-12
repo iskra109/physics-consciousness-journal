@@ -321,7 +321,7 @@ export default function PhysicsOfConsciousnessJournal() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-stone-100 selection:bg-stone-200 selection:text-black">
+   <div className="min-h-screen bg-[#0a0a0a] text-stone-100 selection:bg-stone-200 selection:text-black pt-24">
       <div className="pointer-events-none fixed inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_0%,rgba(255,255,255,0.08),transparent_24%),radial-gradient(circle_at_70%_12%,rgba(255,255,255,0.05),transparent_20%),radial-gradient(circle_at_50%_35%,rgba(255,255,255,0.025),transparent_32%),linear-gradient(to_bottom,#050505,#0a0a0a_34%,#060606_68%,#040404)]" />
         <div className="absolute inset-0 opacity-[0.05] bg-[linear-gradient(to_right,transparent,rgba(255,255,255,0.22),transparent)] [background-size:1200px_100%]" />
@@ -374,20 +374,21 @@ export default function PhysicsOfConsciousnessJournal() {
               {sections.map((section) => {
                 const isActive = activeSection === section.id;
                 return (
-                  <a
-                    key={section.id}
-                    ref={(el) => {
-                      if (el) tabRefs.current[section.id] = el;
-                    }}
-                    href={`#${section.id}`}
-                    onClick={scrollToSection(section.id)}
-                    aria-current={isActive ? "page" : undefined}
-                    className={`whitespace-nowrap rounded-full border px-3.5 py-2 text-xs leading-none transition focus:outline-none focus:ring-2 focus:ring-white/20 active:scale-[0.98] md:px-4 md:py-2 md:text-base ${
-                      isActive
-                        ? "border-white/50 bg-white/12 text-white"
-                        : "border-white/10 text-stone-300 hover:border-white/30 hover:text-white"
-                    }`}
-                  >
+                 <a
+  key={section.id}
+  href={`#${section.id}`}
+  onClick={(e) => {
+    e.preventDefault()
+    setActiveSection(section.id)
+    document.getElementById(section.id)?.scrollIntoView({ behavior: "smooth" })
+  }}
+  className={`whitespace-nowrap rounded-full border px-3.5 py-2 text-xs leading-none transition
+  ${
+    isActive
+      ? "border-white/50 bg-white/12 text-white"
+      : "border-white/10 text-stone-300 hover:border-white/30 hover:text-white"
+  }`}
+>
                     {section.title}
                   </a>
                 );
