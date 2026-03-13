@@ -251,11 +251,72 @@ export default function PhysicsOfConsciousnessJournal() {
   const current = content[language];
   const sections = current.sections;
 
+  const seo = {
+    ru: {
+      title: "Физика сознания — онлайн-журнал будущего человека",
+      description:
+        "Авторское независимое онлайн-издание о будущем человека. Тексты о сознании, наблюдателе, свободе, любви, квантовой неопределённости и цивилизационных сценариях развития мира.",
+      ogTitle: "Физика сознания",
+      ogDescription:
+        "Онлайн-журнал будущего человека: сознание, наблюдатель, свобода, любовь, квантовая неопределённость и новая картина мира.",
+    },
+    en: {
+      title: "Physics of Consciousness — online journal of the future human",
+      description:
+        "An independent online publication about the future of the human. Essays on consciousness, the observer, freedom, love, quantum uncertainty, and civilizational futures.",
+      ogTitle: "Physics of Consciousness",
+      ogDescription:
+        "Online journal of the future human: consciousness, the observer, freedom, love, quantum uncertainty, and a new picture of the world.",
+    },
+  };
+
 
   const getHeaderOffset = () => {
     const headerHeight = headerRef.current?.getBoundingClientRect().height ?? 0;
     return headerHeight + 16;
   };
+
+  useEffect(() => {
+    const applyMeta = (selector, attr, value) => {
+      let element = document.head.querySelector(selector);
+      if (!element) {
+        element = document.createElement("meta");
+        if (attr === "name") element.setAttribute("name", selector.replace('meta[name="', '').replace('"]', ''));
+        if (attr === "property") element.setAttribute("property", selector.replace('meta[property="', '').replace('"]', ''));
+        document.head.appendChild(element);
+      }
+      element.setAttribute("content", value);
+    };
+
+    document.title = seo[language].title;
+    applyMeta('meta[name="description"]', "name", seo[language].description);
+    applyMeta('meta[property="og:title"]', "property", seo[language].ogTitle);
+    applyMeta('meta[property="og:description"]', "property", seo[language].ogDescription);
+    applyMeta('meta[property="og:type"]', "property", "website");
+    applyMeta('meta[property="og:site_name"]', "property", seo[language].ogTitle);
+    applyMeta('meta[name="twitter:card"]', "name", "summary_large_image");
+    applyMeta('meta[name="twitter:title"]', "name", seo[language].ogTitle);
+    applyMeta('meta[name="twitter:description"]', "name", seo[language].ogDescription);
+
+    let canonical = document.head.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute("href", "https://physics-of-consciousness.org/");
+
+    let favicon = document.head.querySelector('link[rel="icon"]');
+    if (!favicon) {
+      favicon = document.createElement("link");
+      favicon.setAttribute("rel", "icon");
+      document.head.appendChild(favicon);
+    }
+    const faviconSvg = encodeURIComponent(
+      `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="black"/><circle cx="32" cy="32" r="18" fill="none" stroke="white" stroke-width="2.5" opacity="0.95"/><circle cx="32" cy="32" r="4" fill="white"/><path d="M16 32h12M36 32h12M32 16v12M32 36v12" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.65"/></svg>`
+    );
+    favicon.setAttribute("href", `data:image/svg+xml,${faviconSvg}`);
+  }, [language]);
 
   useEffect(() => {
     const ids = sections.map((section) => section.id);
