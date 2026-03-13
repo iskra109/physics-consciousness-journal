@@ -1,3 +1,9 @@
+/* MASTER VERSION — Physics of Consciousness Journal
+   This version is the locked reference layout (ethalon).
+   Do not structurally modify without creating a new experimental copy.
+   Saved as the stable baseline for Issue 01.
+*/
+
 import React, { useEffect, useRef, useState } from "react";
 
 export default function PhysicsOfConsciousnessJournal() {
@@ -24,7 +30,7 @@ export default function PhysicsOfConsciousnessJournal() {
       issueBadge: "Выпуск 01",
       editorialTitle: "Почему мы запускаем этот журнал сейчас",
       editorialParagraphs: [
-        "Мы живём в момент, когда интеллект перестаёт быть достаточным определением человека. ИИ уже умеет генерировать текст, изображение, гипотезы, стратегии и всё глубже входит в пространство, которое долго считалось привилегией человеческого ума. Именно поэтому сегодня нам нужен не ещё один медиа-продукт о технологиях, а издание, способное поставить более серьёзный вопрос: что остаётся человеческим, когда мышление больше не является нашей монополией.",
+        "Мы живём во времена, когда интеллект перестаёт быть достаточным определением человека. ИИ уже умеет генерировать тексты, изображения, гипотезы, стратегии и всё глубже входит в пространство, которое долго считалось привилегией человеческого ума. Именно поэтому сегодня нам нужен не ещё один медиа-продукт о технологиях, а издание, способное поставить более серьёзный вопрос: что остаётся человеческим, когда мышление больше не является нашей монополией.",
         "«Физика сознания» — это журнал о целостном видении человека и мира. О восприятии, в котором наука, сознание, технологии, свобода и внутренняя зрелость человека раскрываются не как разделённые области, а как единое пространство новой реальности. Нас интересуют не готовые ответы, а рождение нового языка для описания будущего, в котором человек снова должен стать больше, чем функция, интерфейс или реактивный носитель потребностей.",
       ],
       lineLabel: "Редакционная линия",
@@ -45,10 +51,10 @@ export default function PhysicsOfConsciousnessJournal() {
       essayBadge: "Эссе / Выпуск 01",
       featureTitle: "За пределами интеллекта: почему будущее зависит от сознания",
       featureParagraphs: [
-        "Сегодня главный вопрос эпохи искусственного интеллекта уже не в том, может ли ИИ мыслить. Этот вопрос стремительно теряет остроту. ИИ уже пишет тексты, распознаёт закономерности, создаёт изображения, помогает принимать решения и всё убедительнее имитирует многие функции, которые ещё недавно считались исключительной территорией человека. Настоящий вопрос теперь звучит иначе: достаточно ли самого мышления, чтобы определить человека.",
+        "Сегодня главный вопрос эпохи искусственного интеллекта уже не в том, может ли ИИ мыслить. Этот вопрос стремительно теряет остроту. ИИ уже распознаёт закономерности, помогает принимать решения и всё убедительнее имитирует многие функции, которые ещё недавно считались исключительно территорией человека. Настоящий вопрос теперь звучит иначе: достаточно ли самого мышления, чтобы определить человека.",
         "Это не технологический, а антропологический поворот. Если интеллект можно моделировать, масштабировать и распределять по системам, значит, человеческая уникальность не исчерпывается вычислением. Значит, центр тяжести смещается в другую область — в сознание. Не в сознание как абстрактное слово, а в сознание как способность направлять внимание, удерживать внутреннюю целостность, выбирать ценности, нести ответственность за восприятие и действие, а в пределе — участвовать в формировании той реальности, которую человек потом называет своей жизнью.",
-        "Физика XX века уже однажды подорвала наивную уверенность в том, что мир представляет собой полностью готовую, заранее данную и совершенно независимую от наблюдения сцену. Квантовая теория не доказала, что человеческое сознание буквально создаёт Вселенную. Но она поставила перед наукой и философией проблему наблюдателя, измерения и перехода от множества квантовых возможностей к устойчивой классической реальности. И именно в этом разломе возникло новое культурное пространство, где человек всё чаще мыслится не только как наблюдатель уже данного, но и как участник отбора, оформления и реализации переживаемой реальности.",
-        "До эпохи ИИ человек мог определять себя через превосходство в обработке информации. Он был существом, которое лучше считает, лучше помнит, лучше связывает данные в смысл. Сегодня это основание быстро размывается. Искусственный интеллект показывает, что многие формы интеллектуальной деятельности являются воспроизводимыми. Он снимает с человека монополию на ряд когнитивных функций. Но вместе с этим он обнажает нечто более глубокое: интеллект сам по себе ещё не гарантирует ни свободы, ни зрелости, ни внутреннего суверенитета.",
+        "Физика XX века уже однажды подорвала наивную уверенность в том, что мир представляет собой полностью готовую, заранее данную и совершенно независимую от наблюдения картину. Квантовая теория не доказала, что человеческое сознание буквально создаёт Вселенную. Но она поставила перед наукой и философией вопрос наблюдателя, проблему измерения и перехода от множества квантовых возможностей к устойчивой классической реальности. И именно в этом разломе возникло новое культурное пространство, где человек всё чаще мыслится не только как наблюдатель уже данного, но и как участник отбора, оформления и реализации переживаемой реальности.",
+        "До эпохи ИИ человек мог определять себя через превосходство в обработке информации. Он был существом, которое лучше считает, лучше помнит, лучше связывает данные в смысл. Сегодня это основание быстро размывается. Искусственный интеллект показывает, что многие формы интеллектуальной деятельности являются воспроизводимыми. Он снимает с человека монополию на ряд когнитивных и креативных функций. Но вместе с этим он обнажает нечто более глубокое: интеллект сам по себе ещё не гарантирует ни свободы, ни зрелости, ни внутреннего суверенитета.",
         "Чем совершеннее становятся системы предсказания, персонализации и автоматизации, тем острее становится риск утраты субъектности. Когда внешняя система всё лучше знает, что человек, вероятно, выберет, купит, почувствует, на что откликнется и куда направит внимание, возникает новая форма зависимости — не обязательно через принуждение, а через удобство. Цифровая среда всё активнее предлагает готовые траектории выбора и всё мягче превращает внимание в инфраструктуру контроля. Это делает вопрос о сознании не роскошью философии, а практическим условием свободы.",
         "В этом месте становится особенно важной идея, которую долго было принято считать слишком метафизической для серьёзного разговора: возможно, человек живёт не в полностью фиксированной реальности, а в пространстве возможностей, из которых постоянно актуализирует одну линию. В грубой форме эта мысль действительно не выдерживает критики. Но у неё есть и более тонкое прочтение. Человек участвует в выборе своей реальности хотя бы на уровне феноменологии жизни: внимание меняет переживание, ожидание меняет интерпретацию, вера задаёт рамку допустимого, эмоциональный тон влияет на спектр доступных действий, а ценности фильтруют будущее.",
         "На этом уровне реальность никогда не является для человека просто данностью. Она всегда ещё и результат селекции: из множества возможностей он непрерывно воплощает те, которые соответствуют его состоянию, способу восприятия, готовности действовать и глубине ответственности. Именно здесь появляется тема выбора реальности — не как доказанного физического механизма, а как мощной междисциплинарной модели, связывающей квантовую неопределённость, человеческое восприятие, субъектность и цивилизационный выбор.",
@@ -56,8 +62,8 @@ export default function PhysicsOfConsciousnessJournal() {
         "Сегодня особенно важно научиться удерживать одновременно интеллектуальную честность и антропологическую глубину. Не выдавать метафору за эксперимент. Но и не отрицать, что у человечества возникла новая историческая потребность в языке, который смог бы описать сознание как нечто большее, чем побочный эффект нейронной обработки. Эта потребность обострилась именно сейчас, потому что эпоха ИИ возвращает вопрос не о мощности, а о носителе мощности.",
         "Если системы могут становиться всё умнее, то будущая судьба цивилизации будет определяться уже не только тем, насколько развит интеллект, но и тем, кто им пользуется и из какого состояния. Изобилие само по себе не создаёт зрелого человека. Автоматизация сама по себе не рождает свободу. Даже децентрализация технологий не гарантирует внутренней независимости, если человек остаётся существом внешней причинности, которое легко отдаёт своё внимание, свою волю и своё право на выбор более удобной системе.",
         "Поэтому в центре будущего оказывается не просто интеллект, а качество сознания. Под качеством сознания здесь следует понимать не мистическую частоту, а степень внутренней собранности человека, его способность не распадаться на хаотические импульсы, выдерживать неопределённость без бегства в готовые ответы, различать, чем управляется его внимание, выбирать не только эффективное, но и ценное, и не подменять свободу комфортом.",
-        "Именно поэтому в серьёзный разговор о будущем всё настойчивее возвращаются темы, долго вытесненные на периферию как слишком мягкие: любовь, внимание, ответственность, внутреннее достоинство, цельность. Любовь в этом контексте — не сентимент и не частная эмоция, а особый принцип организации сознания, при котором исчезает внутренний раскол между знанием, действием и ценностью. Это состояние, в котором человек перестаёт быть жертвой обстоятельств и становится носителем внутренней причинности.",
-        "Научная статья не обязана принимать такую метафизику буквально. Но она обязана заметить сам факт её возвращения. В мире, где интеллект перестаёт быть достаточным критерием человеческого, цивилизация ищет новое определение человека. И всё больше признаков того, что это определение будет строиться вокруг субъектности, а не только когниции; вокруг сознания, а не только вычисления; вокруг участия в реальности, а не только её описания.",
+        "Именно поэтому в серьёзный разговор о будущем всё настойчивее возвращаются темы, долго вытесненные на периферию как слишком мягкие: любовь, внимание, ответственность, внутреннее достоинство, цельность. Любовь в этом контексте — не сентимент и не частная эмоция, а особый принцип организации сознания, при котором исчезает внутренний раскол между знанием, действием и ценностью. Это состояние, в котором человек перестаёт быть жертвой обстоятельств и становится носителем внутренней причинности, способной менять реальность.",
+        "Научная статья не обязана принимать такую метафизику буквально. Но она обязана заметить сам факт её возвращения. В мире, где интеллект перестаёт быть достаточным критерием человеческого, цивилизация ищет новое определение человека. И всё больше признаков того, что это определение будет строиться вокруг осознанности, а не только когниции; вокруг сознания, а не только вычисления; вокруг сотворения реальности, а не только её описания.",
         "В этом смысле главный вызов, который ставит перед нами искусственный интеллект, не технологический. Он антропологический. Вопрос не в том, сможет ли ИИ когда-нибудь думать лучше нас. Вопрос в том, кем станет человек в мире, где одного мышления уже недостаточно, чтобы быть человеком. Возможно, будущее будет зависеть не столько от того, насколько совершенными станут наши системы, сколько от того, насколько зрелым станет носитель этих систем. Не столько от интеллекта, сколько от сознания.",
         "И тогда самый важный вопрос XXI века звучит так: не можно ли смоделировать реальность, а способно ли человечество стать достойным сознательного участия в ней.",
       ],
@@ -66,8 +72,8 @@ export default function PhysicsOfConsciousnessJournal() {
       theses: [
         "ИИ лишает человека монополии на обработку информации, но не на сознание.",
         "Квантовая теория не доказывает духовные модели мира, но делает вопрос о наблюдателе исторически неизбежным.",
-        "Реальность человека — не только данность, но и результат селекции внимания, смысла, ценностей и действия.",
-        "Изобилие без субъектности не освобождает: оно может превратиться в новую форму зависимости.",
+        "Реальность человека — не только данность, но и результат селекции внимания, смысла, ценностей и выборов.",
+        "Изобилие без осознанности не освобождает: оно может превратиться в новую форму зависимости.",
         "Будущее цивилизации зависит не только от интеллекта систем, но и от зрелости носителя этой мощности.",
         "Любовь — не сентимент, а принцип интеграции сознания, при котором человек перестаёт быть жертвой и становится причиной.",
       ],
@@ -91,7 +97,7 @@ export default function PhysicsOfConsciousnessJournal() {
           text: "Почему технологический комфорт не гарантирует внутренней независимости — и как выглядит мягкий цифровой концлагерь.",
         },
         {
-          title: "Сингулярность Любви",
+          title: "Технологическая сингулярность",
           text: "Как может выглядеть цивилизационный скачок, если центральной силой развития станет не мощность системы, а зрелость сознания.",
         },
         {
@@ -116,9 +122,9 @@ export default function PhysicsOfConsciousnessJournal() {
         },
       ],
       aboutLabel: "Об издании",
-      aboutTitle: "Журнал о новой картине человека",
+      aboutTitle: "Журнал о новой картине будущего человека",
       aboutParagraphs: [
-        "«Физика сознания» — авторское онлайн-издание о будущем человека после ИИ. Мы публикуем тексты о сознании, наблюдателе, свободе, любви, квантовой неопределённости, субъектности, цифровом контроле и цивилизационных сценариях развития мира.",
+        "«Физика сознания» — авторское независимое онлайн-издание о будущем человека. Мы публикуем тексты о сознании, наблюдателе, свободе, любви, квантовой неопределённости, субъектности, цифровом контроле и цивилизационных сценариях развития мира.",
         "Это пространство для читателей, которым тесно в старой логике разделения на «строгую науку» и «внутренний опыт». Нас интересует язык, способный соединить глубину, ясность и интеллектуальную честность в одном цельном взгляде на человека XXI века.",
       ],
       langRu: "RU",
@@ -140,8 +146,8 @@ export default function PhysicsOfConsciousnessJournal() {
       issueBadge: "Issue 01",
       editorialTitle: "Why we are launching this journal now",
       editorialParagraphs: [
-        "We live in a moment when intelligence is no longer a sufficient definition of the human. AI can already generate text, images, hypotheses, and strategies, and it is moving ever deeper into a space long considered the privilege of the human mind. That is why what we need today is not another media product about technology, but a publication capable of asking a more serious question: what remains human when thought is no longer our monopoly?",
-        "Physics of Consciousness is a journal about a holistic vision of the human being and the world. It is about a language in which science, consciousness, technology, freedom, and the inner maturity of the human are revealed not as separate domains, but as a unified space of a new reality. We are not interested in ready-made answers, but in the birth of a new language for describing a future in which the human must once again become more than a function, an interface, or a reactive carrier of needs.",
+        "We live in a time when intelligence is no longer a sufficient definition of the human. AI can already generate texts, images, hypotheses, and strategies, and it is moving ever deeper into a space long considered the privilege of the human mind. That is why what we need today is not another media product about technology, but a publication capable of asking a more serious question: what remains human when thought is no longer our monopoly?",
+        "Physics of Consciousness is a journal about a holistic vision of the human being and the world. It is about a mode of perception in which science, consciousness, technology, freedom, and the inner maturity of the human are revealed not as separate domains, but as a unified space of a new reality. We are not interested in ready-made answers, but in the birth of a new language for describing a future in which the human must once again become more than a function, an interface, or a reactive carrier of needs.",
       ],
       lineLabel: "Editorial Line",
       lineTitle:
@@ -161,10 +167,10 @@ export default function PhysicsOfConsciousnessJournal() {
       essayBadge: "Essay / Issue 01",
       featureTitle: "Beyond Intelligence: Why the Future Depends on Consciousness",
       featureParagraphs: [
-        "The central question of the age of artificial intelligence is no longer whether AI can think. That question is rapidly losing its sharpness. AI already writes texts, detects patterns, creates images, assists in decision-making, and increasingly imitates many functions that until recently were seen as the exclusive territory of the human. The real question now sounds different: is thinking alone enough to define the human being?",
+        "The central question of the age of artificial intelligence is no longer whether AI can think. That question is rapidly losing its sharpness. AI already detects patterns, helps make decisions, and increasingly imitates many functions that until recently were considered exclusively the territory of the human. The real question now sounds different: is thinking alone enough to define the human being?",
         "This is not a technological turn, but an anthropological one. If intelligence can be modeled, scaled, and distributed across systems, then human uniqueness is not exhausted by computation. The center of gravity shifts into another domain — consciousness. Not consciousness as an abstract word, but consciousness as the capacity to direct attention, preserve inner wholeness, choose values, assume responsibility for perception and action, and ultimately participate in the formation of the reality a human later calls their life.",
-        "Twentieth-century physics once already undermined the naive confidence that the world is a fully given, pre-formed scene entirely independent of observation. Quantum theory did not prove that human consciousness literally creates the Universe. But it did place before science and philosophy the problem of the observer, measurement, and the transition from many quantum possibilities to stable classical reality. In that very fracture, a new cultural space emerged, where the human is increasingly thought of not only as an observer of what is already given, but as a participant in the selection, framing, and realization of lived reality.",
-        "Before the age of AI, the human could define itself through superiority in information processing. It was the being that counted better, remembered better, and connected data into meaning better. Today that foundation is rapidly dissolving. Artificial intelligence shows that many forms of intellectual activity are reproducible. It strips the human of monopoly over a range of cognitive functions. At the same time, it reveals something deeper: intelligence by itself still guarantees neither freedom, nor maturity, nor inner sovereignty.",
+        "Twentieth-century physics once already undermined the naive confidence that the world is a fully given, pre-formed picture entirely independent of observation. Quantum theory did not prove that human consciousness literally creates the Universe. But it did place before science and philosophy the question of the observer, the problem of measurement, and the transition from many quantum possibilities to stable classical reality. In that very fracture, a new cultural space emerged, where the human is increasingly thought of not only as an observer of what is already given, but as a participant in the selection, framing, and realization of lived reality.",
+        "Before the age of AI, the human could define itself through superiority in information processing. It was the being that counted better, remembered better, and connected data into meaning better. Today that foundation is rapidly dissolving. Artificial intelligence shows that many forms of intellectual activity are reproducible. It strips the human of monopoly over a range of cognitive and creative functions. At the same time, it reveals something deeper: intelligence by itself still guarantees neither freedom, nor maturity, nor inner sovereignty.",
         "The more perfect predictive, personalized, and automated systems become, the sharper the risk of losing subjecthood. When an external system increasingly knows what a human will likely choose, buy, feel, respond to, and where attention will go, a new form of dependency arises — not necessarily through coercion, but through convenience. The digital environment increasingly offers ready-made trajectories of choice and more softly turns attention into an infrastructure of control. This makes the question of consciousness not a luxury of philosophy, but a practical condition of freedom.",
         "At this point, an idea long considered too metaphysical for serious discussion becomes especially important: perhaps the human does not live in a fully fixed reality, but in a space of possibilities from which one line is constantly actualized. In a crude form, that thought indeed does not withstand criticism. But it also has a subtler reading. The human participates in choosing reality at least at the level of the phenomenology of life: attention changes experience, expectation changes interpretation, belief sets the frame of the possible, emotional tone affects the spectrum of available actions, and values filter the future.",
         "At this level, reality is never simply a given for the human. It is also the result of selection: out of many possibilities, one continuously embodies those that correspond to one’s state, mode of perception, readiness to act, and depth of responsibility. This is where the theme of reality selection appears — not as a proven physical mechanism, but as a powerful interdisciplinary model connecting quantum uncertainty, human perception, subjecthood, and civilizational choice.",
@@ -172,8 +178,8 @@ export default function PhysicsOfConsciousnessJournal() {
         "Today it is especially important to hold intellectual honesty and anthropological depth together. Not to present metaphor as experiment. But also not to deny that humanity has developed a new historical need for a language able to describe consciousness as something more than a byproduct of neural processing. This need has sharpened precisely now, because the age of AI returns us not to the question of power, but to the bearer of power.",
         "If systems can become ever more intelligent, then the future fate of civilization will be determined not only by how developed intelligence is, but by who uses it and from what state of being. Abundance by itself does not create a mature human. Automation by itself does not generate freedom. Even the decentralization of technology does not guarantee inner independence if the human remains a being of external causality, easily handing over attention, will, and the right to choose to a more convenient system.",
         "That is why the center of the future is not intelligence alone, but the quality of consciousness. By quality of consciousness one should understand not some mystical frequency, but the degree of inner gatheredness of the human: the capacity not to fall apart into chaotic impulses, to endure uncertainty without fleeing into ready-made answers, to discern what governs attention, to choose not only the efficient but also the valuable, and not to exchange freedom for comfort.",
-        "That is why themes long pushed to the periphery as too soft return ever more insistently into serious conversation about the future: love, attention, responsibility, inner dignity, wholeness. Love in this context is not sentiment and not a private emotion, but a special principle of organizing consciousness in which the inner split between knowledge, action, and value disappears. It is a state in which the human ceases to be a victim of circumstances and becomes the bearer of inner causality.",
-        "A scientific article is not obliged to take such metaphysics literally. But it is obliged to notice the very fact of its return. In a world where intelligence is no longer a sufficient criterion of the human, civilization is searching for a new definition of the human. And there are more and more signs that this definition will be built around subjecthood rather than cognition alone; around consciousness rather than computation; around participation in reality rather than its mere description.",
+        "That is why themes long pushed to the periphery as too soft return ever more insistently into serious conversation about the future: love, attention, responsibility, inner dignity, wholeness. Love in this context is not sentiment and not a private emotion, but a special principle of organizing consciousness in which the inner split between knowledge, action, and value disappears. It is a state in which the human ceases to be a victim of circumstances and becomes the bearer of inner causality capable of changing reality.",
+        "A scientific article is not obliged to take such metaphysics literally. But it is obliged to notice the very fact of its return. In a world where intelligence is no longer a sufficient criterion of the human, civilization is searching for a new definition of the human. And there are more and more signs that this definition will be built around awareness rather than cognition alone; around consciousness rather than computation; around the co-creation of reality rather than its mere description.",
         "In that sense, the main challenge posed to us by artificial intelligence is not technological. It is anthropological. The question is not whether AI will someday think better than we do. The question is what kind of being the human will become in a world where thinking alone is no longer enough to be human. Perhaps the future will depend not so much on how perfect our systems become, but on how mature the bearer of those systems becomes. Not so much on intelligence, as on consciousness.",
         "And then the most important question of the twenty-first century sounds like this: not whether reality can be modeled, but whether humanity can become worthy of conscious participation in it.",
       ],
@@ -182,8 +188,8 @@ export default function PhysicsOfConsciousnessJournal() {
       theses: [
         "AI deprives the human of a monopoly on information processing, but not on consciousness.",
         "Quantum theory does not prove spiritual models of the world, but it makes the question of the observer historically unavoidable.",
-        "Human reality is not only a given, but also the result of the selection of attention, meaning, values, and action.",
-        "Abundance without subjecthood does not liberate: it can turn into a new form of dependency.",
+        "Human reality is not only a given, but also the result of the selection of attention, meaning, values, and choices.",
+        "Abundance without awareness does not liberate: it can turn into a new form of dependency.",
         "The future of civilization depends not only on the intelligence of systems, but on the maturity of the bearer of that power.",
         "Love is not sentiment, but a principle of integration of consciousness, through which the human ceases to be a victim and becomes a cause.",
       ],
@@ -207,7 +213,7 @@ export default function PhysicsOfConsciousnessJournal() {
           text: "Why technological comfort does not guarantee inner independence — and what a soft digital camp may look like.",
         },
         {
-          title: "The Singularity of Love",
+          title: "Technological Singularity",
           text: "What a civilizational leap might look like if the central force of development becomes not system power, but the maturity of consciousness.",
         },
         {
@@ -232,9 +238,9 @@ export default function PhysicsOfConsciousnessJournal() {
         },
       ],
       aboutLabel: "About",
-      aboutTitle: "A Journal About a New Picture of the Human",
+      aboutTitle: "A Journal About a New Picture of the Future Human",
       aboutParagraphs: [
-        "Physics of Consciousness is an authorial online publication about the future of the human after AI. We publish texts on consciousness, the observer, freedom, love, quantum uncertainty, subjecthood, digital control, and civilizational scenarios of world development.",
+        "Physics of Consciousness is an independent online publication about the future of the human. We publish texts on consciousness, the observer, freedom, love, quantum uncertainty, subjecthood, digital control, and civilizational scenarios of world development.",
         "This is a space for readers who feel confined by the old logic of division between ‘strict science’ and ‘inner experience.’ We are interested in a language capable of uniting depth, clarity, and intellectual honesty in one integral vision of the human of the 21st century.",
       ],
       langRu: "RU",
@@ -244,6 +250,7 @@ export default function PhysicsOfConsciousnessJournal() {
 
   const current = content[language];
   const sections = current.sections;
+
 
   const getHeaderOffset = () => {
     const headerHeight = headerRef.current?.getBoundingClientRect().height ?? 0;
@@ -267,11 +274,8 @@ export default function PhysicsOfConsciousnessJournal() {
       ids.forEach((id) => {
         const element = document.getElementById(id);
         if (!element) return;
-
         const top = element.offsetTop;
-        if (probeY >= top) {
-          currentId = id;
-        }
+        if (probeY >= top) currentId = id;
       });
 
       setActiveSection(currentId);
@@ -290,20 +294,15 @@ export default function PhysicsOfConsciousnessJournal() {
   useEffect(() => {
     const container = tabsContainerRef.current;
     const activeTab = tabRefs.current[activeSection];
-
     if (!container || !activeTab) return;
 
-    const isMobile = window.innerWidth < 768;
-    if (!isMobile) return;
+    if (window.innerWidth >= 768) return;
 
     const targetLeft = activeTab.offsetLeft - container.clientWidth / 2 + activeTab.clientWidth / 2;
     const maxScroll = container.scrollWidth - container.clientWidth;
     const nextLeft = Math.max(0, Math.min(targetLeft, maxScroll));
 
-    container.scrollTo({
-      left: nextLeft,
-      behavior: "smooth",
-    });
+    container.scrollTo({ left: nextLeft, behavior: "smooth" });
   }, [activeSection, language]);
 
   const scrollToSection = (id) => (event) => {
@@ -321,13 +320,13 @@ export default function PhysicsOfConsciousnessJournal() {
   };
 
   return (
-  <div className="min-h-screen bg-[#0a0a0a] text-stone-100 selection:bg-stone-200 selection:text-black">
+    <div className="min-h-screen bg-[#0a0a0a] text-stone-100 selection:bg-stone-200 selection:text-black">
       <div className="pointer-events-none fixed inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_0%,rgba(255,255,255,0.08),transparent_24%),radial-gradient(circle_at_70%_12%,rgba(255,255,255,0.05),transparent_20%),radial-gradient(circle_at_50%_35%,rgba(255,255,255,0.025),transparent_32%),linear-gradient(to_bottom,#050505,#0a0a0a_34%,#060606_68%,#040404)]" />
         <div className="absolute inset-0 opacity-[0.05] bg-[linear-gradient(to_right,transparent,rgba(255,255,255,0.22),transparent)] [background-size:1200px_100%]" />
       </div>
 
-      <header ref={headerRef} className="sticky top-0 z-50 bg-black/30 backdrop-blur-lg">
+      <header ref={headerRef} className="sticky top-0 z-50 bg-black/55 backdrop-blur-xl">
         <div className="mx-auto max-w-7xl px-4 py-4 md:px-6 md:py-4">
           <div className="flex items-start justify-between gap-4 md:items-center">
             <div className="min-w-0">
@@ -346,9 +345,7 @@ export default function PhysicsOfConsciousnessJournal() {
                 type="button"
                 onClick={() => setLanguage("ru")}
                 className={`rounded-full px-3 py-1.5 text-xs uppercase tracking-[0.2em] transition ${
-                  language === "ru"
-                    ? "bg-white/12 text-white"
-                    : "text-stone-400 hover:text-white"
+                  language === "ru" ? "bg-white/12 text-white" : "text-stone-400 hover:text-white"
                 }`}
               >
                 {current.langRu}
@@ -357,9 +354,7 @@ export default function PhysicsOfConsciousnessJournal() {
                 type="button"
                 onClick={() => setLanguage("en")}
                 className={`rounded-full px-3 py-1.5 text-xs uppercase tracking-[0.2em] transition ${
-                  language === "en"
-                    ? "bg-white/12 text-white"
-                    : "text-stone-400 hover:text-white"
+                  language === "en" ? "bg-white/12 text-white" : "text-stone-400 hover:text-white"
                 }`}
               >
                 {current.langEn}
@@ -368,28 +363,26 @@ export default function PhysicsOfConsciousnessJournal() {
           </div>
 
           <nav ref={tabsContainerRef} className="-mx-1 mt-4 overflow-x-auto pb-1 md:mx-0 md:overflow-visible md:pb-0">
-            <div
-              className="flex min-w-max gap-2.5 px-1 text-sm text-stone-300 md:min-w-0 md:flex-wrap md:gap-3.5 md:px-0 md:text-base"
-            >
+            <div className="flex min-w-max gap-2.5 px-1 text-sm text-stone-300 md:min-w-0 md:flex-wrap md:gap-3.5 md:px-0 md:text-base">
               {sections.map((section) => {
                 const isActive = activeSection === section.id;
                 return (
-                 <a
-  key={section.id}
-  ref={(el) => {
-    if (el) tabRefs.current[section.id] = el
-  }}
-  href={`#${section.id}`}
-  onClick={scrollToSection}
-  aria-current={isActive ? "page" : undefined}
-  className={`whitespace-nowrap rounded-full border px-3.5 py-2 text-xs leading-none transition focus:outline-none ${
-    isActive
-      ? "border-white/50 bg-white/12 text-white"
-      : "border-white/10 text-stone-300 hover:border-white/30 hover:text-white"
-  }`}
->
-  {section.title}
-</a>
+                  <a
+                    key={section.id}
+                    ref={(el) => {
+                      if (el) tabRefs.current[section.id] = el;
+                    }}
+                    href={`#${section.id}`}
+                    onClick={scrollToSection(section.id)}
+                    aria-current={isActive ? "page" : undefined}
+                    className={`whitespace-nowrap rounded-full border px-3.5 py-2 text-xs leading-none transition focus:outline-none focus:ring-2 focus:ring-white/20 active:scale-[0.98] md:px-4 md:py-2 md:text-base ${
+                      isActive
+                        ? "border-white/50 bg-white/12 text-white"
+                        : "border-white/10 text-stone-300 hover:border-white/30 hover:text-white"
+                    }`}
+                  >
+                    {section.title}
+                  </a>
                 );
               })}
             </div>
