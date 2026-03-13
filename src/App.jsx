@@ -305,17 +305,6 @@ export default function PhysicsOfConsciousnessJournal() {
       document.head.appendChild(canonical);
     }
     canonical.setAttribute("href", "https://physics-of-consciousness.org/");
-
-    let favicon = document.head.querySelector('link[rel="icon"]');
-    if (!favicon) {
-      favicon = document.createElement("link");
-      favicon.setAttribute("rel", "icon");
-      document.head.appendChild(favicon);
-    }
-    const faviconSvg = encodeURIComponent(
-      `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="black"/><circle cx="32" cy="32" r="18" fill="none" stroke="white" stroke-width="2.5" opacity="0.95"/><circle cx="32" cy="32" r="4" fill="white"/><path d="M16 32h12M36 32h12M32 16v12M32 36v12" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.65"/></svg>`
-    );
-    favicon.setAttribute("href", `data:image/svg+xml,${faviconSvg}`);
   }, [language]);
 
   useEffect(() => {
