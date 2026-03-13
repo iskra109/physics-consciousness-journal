@@ -326,7 +326,7 @@ export default function PhysicsOfConsciousnessJournal() {
         <div className="absolute inset-0 opacity-[0.05] bg-[linear-gradient(to_right,transparent,rgba(255,255,255,0.22),transparent)] [background-size:1200px_100%]" />
       </div>
 
-      <header ref={headerRef} className="sticky top-0 z-50 bg-black/40 backdrop-blur-2xl">
+      <header ref={headerRef} className="sticky top-0 z-50 bg-black/30 backdrop-blur-lg">
         <div className="mx-auto max-w-7xl px-4 py-4 md:px-6 md:py-4">
           <div className="flex items-start justify-between gap-4 md:items-center">
             <div className="min-w-0">
